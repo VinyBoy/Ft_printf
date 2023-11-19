@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: vnieto-j <vnieto-j@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 15:17:54 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/28 15:17:54 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/19 13:00:03 by vnieto-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,11 +65,16 @@ int main(void)
     int num = 42;
     char *text = "Salut";
     char c = 'a';
+	char *n = NULL;
     ft_printf("%d\t%x\t%X\n", num, num, num);
+	printf("%d\t%x\t%X\n", num, num, num);
     ft_printf("%s\t%s\t%c\t%c\t%c\n", text, text, c, 'B', ' ');
-    printf("%s%d\n", "Bangbang", 43);
+	printf("%s\t%s\t%c\t%c\t%c\n", text, text, c, 'B', ' ');
+    ft_printf("%s%d\n", "Bangbang", 43);
+	printf("%s%d\n", "Bangbang", 43);
 	ft_printf("%s vuv %d", "Bangbang", num);
+	printf("%s vuv %d", "Bangbang", num);
+	ft_printf("%s\n", n);
+	printf("%s\n", n);
 	ft_printf("%c", c);
-
-
 }
